@@ -1,13 +1,71 @@
-body {
+
+*{
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  font-family: 'Poppins',sans-serif;
+  font-weight: bold;
+  background-color: black;
+
+}
+ul{
+  list-style-type: none;
+}
+li{
+  margin: 0px auto;
+  cursor: pointer;
+  transition: 0.3s;
+  position: relative;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+li:hover{
+  padding: 20px;
+  background-color: white;
+  color: black;
+  align-items: center;
+}
+.navbar{
+  display: flex;
+  justify-content: center;
+  align-items:center;
+  background-color: black;
+  color: white;
+  margin: 0;
+  height: 90px;
+}
+
+.logo{
+  width: auto;
+  height: 60px;
+  margin: 0 auto;
+  padding: 0;
+  cursor: pointer;
+}
+
+.carousel{
+  background-color:black;
+  padding-top: 20px;
+
+}
+
+.carousel--image{
+  height: 250px;
+  width: 100%;
+}
+
+.rec.rec-dot {
+  background: white;
+  border-color: aqua;
+}
+.rec.rec-dot_active {
+  background: aqua;
+  
+}
+
+.rec.rec-arrow {
+  border-radius: 50%;
+  background-color: white;
+}
+
+.rec.rec-arrow:disabled { 
+  visibility: hidden; 
 }
